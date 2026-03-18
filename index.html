@@ -66,6 +66,10 @@ canvas{display:block}
       <img src="Milka.png" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
       <div class="fb" style="background:#ec4899">🐮</div><span>Milka</span>
     </div>
+    <div class="cc" data-char="Bark">
+      <img src="Bark.png" onerror="this.style.display='none';this.nextSibling.style.display='flex'">
+      <div class="fb" style="background:#ec4899">🍫</div><span>Bark</span>
+    </div>
   </div>
 </div>
 
@@ -129,7 +133,7 @@ let camX=0;
 let platforms=[],coins=[],enemies=[],qblocks=[],spikes=[],particles=[],drops=[],flagPole=null;
 
 // Preload
-['Tito','Smartik','Junior','Fil','Milka'].forEach(n=>{
+['Tito','Smartik','Junior','Fil','Milka','Bark'].forEach(n=>{
   const i=new Image();
   i.onload=()=>charImgs[n]=i;
   i.src=n+'.png';
